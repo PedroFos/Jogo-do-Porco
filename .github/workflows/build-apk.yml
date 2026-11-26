@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-      - uses: android-actions/setup-android@v3
+          java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
@@ -133,4 +133,3 @@ jobs:
         with:
           name: PorcoAtirador-apk
           path: android-build/app/build/outputs/apk/debug/app-debug.apk
-
